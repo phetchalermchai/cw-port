@@ -1,7 +1,7 @@
 import React from 'react'
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
-import { FaMapMarkerAlt,FaMobileAlt,FaLine,FaLocationArrow } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Line from "../img/line.jpg"
 
 function Contact() {
@@ -59,22 +59,22 @@ function Contact() {
                         <label className='input-group-text'>Message</label>
                         <textarea className='form-control' name="message" style={{height:"10rem"}} ref={messege}/>
                     </div>
-                    <button type='submit' className='d-flex justify-content-center align-items-center btn p-3 btn-primary w-100'><FaLocationArrow className='me-2'/>Send Message</button>
+                    <button type='submit' className='d-flex justify-content-center align-items-center btn p-3 btn-primary w-100'><FontAwesomeIcon icon="fa-solid fa-location-arrow" className='me-2'/>Send Message</button>
                 </form>
-                        <div class="col-md-1 barrier"><h1 className='vr' style={{height:"40rem"}}></h1></div>
+                        <div className="col-md-1 barrier"><h1 className='vr' style={{height:"40rem"}}></h1></div>
                     <div className='col-12 col-md-4   text-center'>
                         <div className='border-bottom mb-3'>
-                            <h3><FaMapMarkerAlt/></h3>
+                            <h3><FontAwesomeIcon icon="fa-solid fa-location-dot" /></h3>
                             <h4>HOME ADDRESS</h4>
                             <p>89/624 Mueang Nonthaburi District,Nonthaburi 11000</p>
                         </div>
                         <div className='border-bottom mb-3'>
-                            <h3><FaMobileAlt/></h3>
+                            <h3><FontAwesomeIcon icon="fa-solid fa-mobile-screen-button" /></h3>
                             <h4 className='text-uppercase'>mobile number</h4>
                             <p>095-716-3209</p>
                         </div>
                         <div className='mb-3'>
-                            <h3><FaLine/></h3>
+                            <h3><FontAwesomeIcon icon="fa-brands fa-line" /></h3>
                             <h4 className='text-uppercase'>line</h4>
                             <p>LINE ID : phetchalermchai</p>
                             <img src={Line} style={{width:"10rem"}} alt="line" />

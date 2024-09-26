@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import profile from '../img/profile.jpg'
-import { FaDiscord,FaFacebook } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../App.css'
 
 function Header() {
@@ -20,8 +20,8 @@ function Header() {
                         <h4 className='fw-light'>Front end developer</h4>
                     </div>
                     <div className="header-btn d-flex justify-content-center align-items-center">
-                        <a className='btn btn-primary d-flex justify-content-center align-items-center fs-1 me-3' href="https://www.facebook.com/phet.ifrog" target={"_blank"}><FaFacebook className="bi bi-facebook text-light i-nav-hover"/></a>
-                        <a className='fs-1 btn btn-primary d-flex justify-content-center align-items-center' href="https://discord.com/users/Milili#7989" target={"_blank"}><FaDiscord className="bi bi-discord text-light i-nav-hover"/></a>
+                        <a className='btn btn-primary d-flex justify-content-center align-items-center fs-1 me-3' href="https://www.facebook.com/phet.ifrog" target={"_blank"}><FontAwesomeIcon icon="fa-brands fa-facebook" className="bi bi-facebook text-light i-nav-hover"/></a>
+                        <a className='fs-1 btn btn-primary d-flex justify-content-center align-items-center' href="https://discord.com/users/Milili#7989" target={"_blank"}><FontAwesomeIcon icon="fa-brands fa-discord" className="bi bi-discord text-light i-nav-hover"/></a>
                     </div>  
                 </div>
             </div>

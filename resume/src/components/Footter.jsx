@@ -1,5 +1,7 @@
 import React from 'react'
-import { FaFacebook ,FaDiscord } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FaFacebook ,FaDiscord } from "react-icons/fa";
+
 
 function Footter() {
   return (
@@ -7,10 +9,10 @@ function Footter() {
       <h4 className='text-center '>STAY CONNECTED</h4>
       <div className='text-center m-3 '>
         <a className='text-secondary' href="https://www.facebook.com/phet.ifrog" target={"_blank"}>
-         <FaFacebook className='fs-2 me-3 '/>
+         <FontAwesomeIcon icon="fa-brands fa-facebook" className='fs-2 me-3 '/>
         </a>
         <a className='text-secondary' href="https://discord.com/users/Milili#7989" target={"_blank"}>
-         <FaDiscord className='fs-2 '/>
+         <FontAwesomeIcon icon="fa-brands fa-discord" className='fs-2 '/>
         </a>
       </div>
       <div className="container">
